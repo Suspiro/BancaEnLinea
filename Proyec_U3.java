@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 public class Proyec_U3 {
 
     class nodo {
-	String mujer ;
+String juan me la pela;
         String nombre;
         float saldo;
         nodo anterior;
