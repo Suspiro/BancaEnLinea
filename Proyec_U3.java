@@ -16,7 +16,6 @@ import javax.swing.JOptionPane;
 public class Proyec_U3 {
 
     class nodo {
-String juan me la pela;
         String nombre;
         float saldo;
         nodo anterior;
@@ -199,25 +198,6 @@ public void eliminar() throws IOException{
         }
     }
 
-    public void depositos(String np, float mas) {
-        if (inicio == null) {
-            System.out.println("lista vacia");
-        } else {
-            auxiliar = inicio;
-            do {
-                if (auxiliar.nip.equals(np)) {
-                    System.out.println("");
-                    auxiliar.saldo = auxiliar.saldo + mas;
-                    System.out.println("Deposito Exitoso");
-                    System.out.println(" Cuenta Actualizada:  "+auxiliar.nombre+"  Saldo:  "+auxiliar.saldo);
-                    auxiliar = null;
-                } else {
-                    auxiliar = auxiliar.sigue;
-                }
-            } while (auxiliar != null);
-        }
-    }
-
     public void depositos(float men, String nip) {
         if (inicio == null) {
             System.out.println("lista vacia");
@@ -269,6 +249,7 @@ public void eliminar() throws IOException{
             } while (auxiliar != null);
         }
     }
+int feo=0;
 public void con(String ni) {
     Scanner leer = new Scanner(System.in);
         x=0;
@@ -280,7 +261,7 @@ public void con(String ni) {
                 x++;
                 if (auxiliar.nip.equals(ni)) {
                     do{
-                    System.out.println("Ingresa Tu Nuevo Nip");
+                    System.out.println("Ingresa Tu Nuevo Nip compadre ");
                     String newnip=leer.next();
                     System.out.println("Confirma Tu Nuevo Nip");
                     String newnip1=leer.next();
